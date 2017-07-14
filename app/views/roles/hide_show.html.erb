@@ -1,0 +1,16 @@
+<table border="1">
+	<tr>
+		<th>Name</th>
+	</tr>
+	<% @roles.each do |role| %>
+	<tr>
+		<td><%= role.name %></td>
+	</tr>
+	<% end %>
+</table>
+<br><br>
+<h1><%= link_to "Hide Roles",hide_roles_roles_path %></h1><br><br>
+<h1><%= link_to "Back", root_path %></h1>
+
+
+

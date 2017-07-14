@@ -1,0 +1,13 @@
+<%= form_tag do %>
+<ul>
+  <% @roles.each do |role| %>
+      <li>
+        <%= check_box_tag 'role_ids[]', role.id %>
+        <%=  role.name %>
+      </li>
+  <% end %>
+</ul>
+<%= submit_tag "Hide" %>
+<% end %>
+<br><br>
+<h1><%= link_to "Back", root_path %></h1>
